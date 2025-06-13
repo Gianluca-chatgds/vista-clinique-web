@@ -7,8 +7,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold">VC</span>
+            <div className="w-10 h-10 flex items-center justify-center">
+              <img 
+                src="/lovable-uploads/bc87fb68-272b-4c48-9d77-89bbd83ba51c.png" 
+                alt="Vista Clinique Logo" 
+                className="w-10 h-10 object-contain filter brightness-0 invert"
+              />
             </div>
             <h3 className="text-2xl font-bold">Vista Clinique</h3>
           </div>
