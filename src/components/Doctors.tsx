@@ -1,21 +1,21 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Award, Heart } from "lucide-react";
+import { Eye, Award, Heart } from "lucide-react";
 
 const Doctors = () => {
   const doctors = [
     {
       name: "Dr. Daniel Guedes",
-      specialty: "Clínico Geral",
-      description: "Especialista em medicina preventiva e cuidados primários, com ampla experiência em diagnósticos e tratamentos clínicos.",
-      icon: GraduationCap,
+      specialty: "Oftalmologista",
+      description: "Especialista em cirurgia refrativa, catarata e doenças da retina. Dedicado a oferecer tratamentos modernos e personalizados para preservar e melhorar sua visão.",
+      icon: Eye,
       color: "from-blue-500 to-blue-600"
     },
     {
       name: "Dra. Telma Machado",
-      specialty: "Medicina Interna",
-      description: "Dedicada ao cuidado integral do paciente, especializada em medicina interna e acompanhamento de doenças crônicas.",
-      icon: Heart,
+      specialty: "Oftalmologista",
+      description: "Especialista em glaucoma, córnea e lentes de contato. Comprometida com o diagnóstico precoce e tratamento avançado das doenças oculares.",
+      icon: Eye,
       color: "from-purple-500 to-purple-600"
     }
   ];
@@ -24,10 +24,10 @@ const Doctors = () => {
     <section className="py-20 px-4 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h3 className="text-4xl font-bold text-blue-900 mb-4">Nossos Especialistas</h3>
+          <h3 className="text-4xl font-bold text-blue-900 mb-4">Nossos Oftalmologistas</h3>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Conheça nossa equipe médica altamente qualificada, comprometida em oferecer 
-            o melhor atendimento para você e sua família.
+            Conheça nossa equipe de oftalmologistas altamente qualificados, especialistas em cuidados 
+            oftalmológicos completos para toda a família.
           </p>
         </div>
         

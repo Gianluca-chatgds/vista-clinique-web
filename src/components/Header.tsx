@@ -3,6 +3,10 @@ import { Phone, Instagram, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
+  const handleInstagramClick = () => {
+    window.open('https://www.instagram.com/vistaclinique/', '_blank');
+  };
+
   return (
     <header className="bg-white shadow-sm border-b border-blue-100">
       <div className="container mx-auto px-4 py-4">
@@ -13,7 +17,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-blue-900">Vista Clinique</h1>
-              <p className="text-sm text-blue-600">Cuidado médico especializado</p>
+              <p className="text-sm text-blue-600">Oftalmologia especializada</p>
             </div>
           </div>
           
@@ -23,7 +27,12 @@ const Header = () => {
               <span className="font-medium">(11) 3456-7890</span>
             </div>
             <div className="flex space-x-3">
-              <Button variant="outline" size="sm" className="p-2">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="p-2"
+                onClick={handleInstagramClick}
+              >
                 <Instagram size={18} />
               </Button>
               <Button variant="outline" size="sm" className="p-2">

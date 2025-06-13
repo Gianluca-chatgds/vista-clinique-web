@@ -8,13 +8,13 @@ const Hero = () => {
       <div className="container mx-auto text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-5xl md:text-6xl font-bold text-blue-900 mb-6">
-            Excelência em
-            <span className="text-blue-600 block">Cuidados Médicos</span>
+            Cuidando da sua
+            <span className="text-blue-600 block">Visão com Excelência</span>
           </h2>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-            Na Vista Clinique, oferecemos atendimento médico personalizado com dois especialistas 
-            dedicados ao seu bem-estar. Nossa missão é proporcionar cuidados de qualidade 
-            em um ambiente acolhedor e moderno.
+            Na Vista Clinique, oferecemos atendimento oftalmológico especializado com 
+            dois profissionais dedicados ao cuidado completo da sua visão. 
+            Tecnologia avançada e atendimento humanizado em um só lugar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
