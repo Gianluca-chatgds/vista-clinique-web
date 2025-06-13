@@ -1,18 +1,11 @@
-
 import { Heart } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-blue-900 text-white py-12">
+  return <footer className="bg-blue-900 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <div className="flex items-center justify-center space-x-3 mb-6">
             <div className="w-10 h-10 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/bc87fb68-272b-4c48-9d77-89bbd83ba51c.png" 
-                alt="Vista Clinique Logo" 
-                className="w-10 h-10 object-contain filter brightness-0 invert"
-              />
+              
             </div>
             <h3 className="text-2xl font-bold">Vista Clinique</h3>
           </div>
@@ -32,8 +25,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

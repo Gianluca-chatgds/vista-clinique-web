@@ -1,15 +1,11 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Instagram, Youtube, MapPin, Clock, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Contact = () => {
   const handleInstagramClick = () => {
     window.open('https://www.instagram.com/vistaclinique/', '_blank');
   };
-
-  return (
-    <section className="py-20 px-4 bg-gradient-to-b from-blue-50 to-blue-100">
+  return <section className="py-20 px-4 bg-gradient-to-b from-blue-50 to-blue-100">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h3 className="text-4xl font-bold text-blue-900 mb-4">Entre em Contato</h3>
@@ -63,19 +59,11 @@ const Contact = () => {
 
         <div className="text-center mt-12">
           <div className="flex justify-center space-x-6 mb-8">
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-blue-600 text-blue-600 hover:bg-blue-50"
-              onClick={handleInstagramClick}
-            >
+            <Button variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50" onClick={handleInstagramClick}>
               <Instagram className="mr-2" size={20} />
               @vistaclinique
             </Button>
-            <Button variant="outline" size="lg" className="border-red-600 text-red-600 hover:bg-red-50">
-              <Youtube className="mr-2" size={20} />
-              Vista Clinique
-            </Button>
+            
           </div>
           
           <div className="flex items-center justify-center space-x-2 text-gray-600">
@@ -84,8 +72,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
