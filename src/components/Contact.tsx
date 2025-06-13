@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Instagram, Youtube, MapPin, Clock, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -34,9 +35,9 @@ const Contact = () => {
               <h4 className="text-xl font-bold text-blue-900 mb-4">Localização</h4>
               <p className="text-gray-600 mb-4">Venha nos visitar</p>
               <p className="text-blue-600 font-medium">
-                Rua das Clínicas, 123<br />
-                Bairro Médico - São Paulo/SP<br />
-                CEP: 01234-567
+                av presidente epitácio pessoa, 2930, loja 05<br />
+                tambauzinho - joão pessoa/pb<br />
+                cep: 58.042-006
               </p>
             </CardContent>
           </Card>
