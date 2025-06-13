@@ -2,11 +2,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Instagram, Youtube, MapPin, Clock, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 const Contact = () => {
   const handleInstagramClick = () => {
     window.open('https://www.instagram.com/vistaclinique/', '_blank');
   };
-  return <section className="py-20 px-4 bg-gradient-to-b from-blue-50 to-blue-100">
+
+  return (
+    <section className="py-20 px-4 bg-gradient-to-b from-blue-50 to-blue-100">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h3 className="text-4xl font-bold text-blue-900 mb-4">Entre em Contato</h3>
@@ -35,9 +38,9 @@ const Contact = () => {
               <h4 className="text-xl font-bold text-blue-900 mb-4">Localização</h4>
               <p className="text-gray-600 mb-4">Venha nos visitar</p>
               <p className="text-blue-600 font-medium">
-                av presidente epitácio pessoa, 2930, loja 05<br />
-                tambauzinho - joão pessoa/pb<br />
-                cep: 58.042-006
+                Av. Presidente Epitácio Pessoa, 2930, Loja 05<br />
+                Tambauzinho, João Pessoa - PB<br />
+                CEP 58042-006
               </p>
             </CardContent>
           </Card>
@@ -73,6 +76,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Contact;

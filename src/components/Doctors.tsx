@@ -7,16 +7,18 @@ const Doctors = () => {
     {
       name: "Dr. Daniel Guedes",
       specialty: "Oftalmologista",
-      description: "Especialista em cirurgia refrativa, catarata e doenças da retina. Dedicado a oferecer tratamentos modernos e personalizados para preservar e melhorar sua visão.",
+      description: "Dedicado a oferecer tratamentos modernos e personalizados para preservar e melhorar sua visão.",
       icon: Eye,
-      color: "from-blue-500 to-blue-600"
+      color: "from-blue-500 to-blue-600",
+      photo: "/lovable-uploads/650ee987-2dbf-4751-a876-bae3cf1c9c86.png"
     },
     {
-      name: "Dra. Telma Machado",
+      name: "Dra. Telma Guedes",
       specialty: "Oftalmologista",
-      description: "Especialista em glaucoma, córnea e lentes de contato. Comprometida com o diagnóstico precoce e tratamento avançado das doenças oculares.",
+      description: "Comprometida com o diagnóstico precoce e tratamento avançado das doenças oculares.",
       icon: Eye,
-      color: "from-purple-500 to-purple-600"
+      color: "from-purple-500 to-purple-600",
+      photo: "/lovable-uploads/212e0ff0-1bb4-4ddb-95c1-9649582a28d5.png"
     }
   ];
 
@@ -36,8 +38,12 @@ const Doctors = () => {
             <Card key={index} className="hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardContent className="p-8">
                 <div className="text-center">
-                  <div className={`w-20 h-20 bg-gradient-to-br ${doctor.color} rounded-full flex items-center justify-center mx-auto mb-6`}>
-                    <doctor.icon size={32} className="text-white" />
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden shadow-lg">
+                    <img 
+                      src={doctor.photo} 
+                      alt={doctor.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h4 className="text-2xl font-bold text-blue-900 mb-2">{doctor.name}</h4>
                   <p className="text-blue-600 font-semibold mb-4">{doctor.specialty}</p>
