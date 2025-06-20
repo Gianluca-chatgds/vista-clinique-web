@@ -4,6 +4,13 @@ function openInstagram() {
     window.open('https://www.instagram.com/vistaclinique/', '_blank');
 }
 
+// Função para abrir WhatsApp
+function openWhatsApp() {
+    const phoneNumber = '5583991310843'; // Formato internacional sem símbolos
+    const message = encodeURIComponent('Olá! Gostaria de agendar uma consulta na Vista Clinique.');
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+}
+
 // Animações suaves ao rolar a página
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling para links âncora
@@ -59,25 +66,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Botões de ação
+    // Botões de ação - Atualizado para abrir WhatsApp
     const scheduleBtn = document.querySelector('.btn-primary');
     const contactBtn = document.querySelector('.btn-outline');
     
     if (scheduleBtn) {
         scheduleBtn.addEventListener('click', function() {
-            alert('Funcionalidade de agendamento em desenvolvimento. Entre em contato pelo Instagram @vistaclinique');
+            openWhatsApp();
         });
     }
     
     if (contactBtn) {
         contactBtn.addEventListener('click', function() {
-            // Rolar para a seção de contato
-            const contactSection = document.querySelector('.contact');
-            if (contactSection) {
-                contactSection.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
+            openWhatsApp();
         });
     }
     
