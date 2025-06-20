@@ -1,24 +1,174 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vista-clinique-web</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista Clinique - Oftalmologia Especializada</title>
+    <meta name="description" content="Vista Clinique - Cuidados oftalmológicos especializados em João Pessoa">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-container">
+                        <img src="/lovable-uploads/bc87fb68-272b-4c48-9d77-89bbd83ba51c.png" alt="Vista Clinique Logo" class="logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>Vista Clinique</h1>
+                        <p>Oftalmologia especializada</p>
+                    </div>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="contact-info">
+                        <span>📞</span>
+                        <span>(11) 3456-7890</span>
+                    </div>
+                    <div class="social-buttons">
+                        <button class="social-btn" onclick="openInstagram()">
+                            <span>📷</span>
+                        </button>
+                        <button class="social-btn">
+                            <span>📺</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <meta property="og:title" content="vista-clinique-web" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    Cuidando da sua
+                    <span class="hero-title-accent">Visão com Excelência</span>
+                </h2>
+                <p class="hero-description">
+                    Na Vista Clinique, oferecemos atendimento oftalmológico especializado com 
+                    dois profissionais dedicados ao cuidado completo da sua visão. 
+                    Tecnologia avançada e atendimento humanizado em um só lugar.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">
+                        <span>📅</span>
+                        Agendar Consulta
+                    </button>
+                    <button class="btn btn-outline">
+                        <span>📞</span>
+                        Entrar em Contato
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Doctors Section -->
+    <section class="doctors">
+        <div class="container">
+            <div class="section-header">
+                <h3>Nossos Oftalmologistas</h3>
+                <p>
+                    Conheça nossa equipe de oftalmologistas altamente qualificados, especialistas em cuidados 
+                    oftalmológicos completos para toda a família.
+                </p>
+            </div>
+            
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-photo">
+                        <img src="/lovable-uploads/650ee987-2dbf-4751-a876-bae3cf1c9c86.png" alt="Dr. Daniel Guedes">
+                    </div>
+                    <h4>Dr. Daniel Guedes</h4>
+                    <p class="doctor-specialty">Oftalmologista</p>
+                    <p class="doctor-description">
+                        Dedicado a oferecer tratamentos modernos e personalizados para preservar e melhorar sua visão.
+                    </p>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-photo">
+                        <img src="/lovable-uploads/212e0ff0-1bb4-4ddb-95c1-9649582a28d5.png" alt="Dra. Telma Guedes">
+                    </div>
+                    <h4>Dra. Telma Guedes</h4>
+                    <p class="doctor-specialty">Oftalmologista</p>
+                    <p class="doctor-description">
+                        Comprometida com o diagnóstico precoce e tratamento avançado das doenças oculares.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h3>Entre em Contato</h3>
+                <p>
+                    Agende sua consulta oftalmológica. Estamos prontos para cuidar da sua visão.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <span>📍</span>
+                    </div>
+                    <h4>Nossa Localização</h4>
+                    <p class="contact-address">
+                        Av. Presidente Epitácio Pessoa, 2930, Loja 05<br>
+                        Tambauzinho, João Pessoa - PB<br>
+                        CEP 58042-006
+                    </p>
+                </div>
+
+                <div class="contact-actions">
+                    <button class="btn btn-outline" onclick="openInstagram()">
+                        <span>📷</span>
+                        @vistaclinique
+                    </button>
+                    
+                    <div class="cnpj-info">
+                        <span>📄</span>
+                        <span>CNPJ: 53.169.299/0001-79</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Vista Clinique</h3>
+                </div>
+                
+                <p class="footer-description">
+                    Comprometidos em oferecer cuidados médicos de excelência, 
+                    sempre priorizando o bem-estar e a saúde dos nossos pacientes.
+                </p>
+                
+                <div class="footer-bottom">
+                    <p class="footer-made-with">
+                        Feito com ❤️ para cuidar da sua saúde
+                    </p>
+                    <p class="footer-copyright">
+                        © 2024 Vista Clinique. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
