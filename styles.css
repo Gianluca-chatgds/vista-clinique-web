@@ -271,8 +271,20 @@ body {
 }
 
 .contact-content {
-    max-width: 2xl;
+    max-width: 5xl;
     margin: 0 auto;
+}
+
+.locations-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .contact-card {
@@ -281,7 +293,6 @@ body {
     padding: 2rem;
     text-align: center;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
     transition: all 0.3s;
 }
 
